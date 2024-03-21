@@ -1,0 +1,160 @@
+body{
+    font-size: 1em; /* taille du texte */
+    font-family: Roboto;
+    font-weight: 300;
+    color: #48585f;
+    /* On va supprimer la marge par défaut de l'élément body
+     (par défaut, body a toujours une marge qui lui empêche de 
+     se coller aux bords de la fenêtre)*/
+     margin: 0;
+     padding: 0;
+}
+#main-header{
+    margin-top: 20px;
+    text-align: center;
+}
+#main-header img{
+    width: 200px;
+    height: 200px;
+    filter:grayscale(1);
+    border-radius: 100px;
+}
+#main-header h1{
+    font-size: 2.5em;
+    font-weight: normal;
+    font-family: Bree serif;
+    color: #c8a517;
+    text-transform: uppercase;
+}
+h1:after{
+    width: 150px;
+    height: 5px;
+    background:#c8a517;
+    display: block; /*Pour que notre élément accepte des dimensions, il faut l'afficher au format bloc*/
+    margin: 20px auto;
+    content: "";
+}
+a{
+    color: #c8a517;
+}
+.bold{
+    font-weight: bold;
+}
+#main-nav ul {
+	width:1000px;
+	height:50px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+/* li :Pas grand chose à faire de ce côté, si ce n'est les aligner sur 
+une seule ligne. Car par défaut les éléments de liste s'affichent 
+les uns en dessous des autres. */
+#main-nav ul li {
+	display: inline;
+}
+
+#main-nav ul li a{
+    font-size: 1.2em;
+    font-weight: normal;
+    font-family: Bree serif;
+    color: #48585f;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 10px; 
+
+}
+#bandeau{
+    height: 350px;
+    background: rgba(178, 188, 193, 0.5);
+}
+.content{
+    width: 1000px;
+    margin: auto;
+    text-align: justify; /* align de 2 cotes*/
+    
+}
+.content p{
+    margin: 0 0 20px;
+}
+#presentation h2{
+    font-size: 1.8em;
+    font-weight: normal;
+    font-family: Bree serif;
+    color: #c8a517;
+    text-transform: uppercase;
+    display: block;
+}
+.text{
+    width: 600px;
+    float: left;
+}
+.infos{
+    width: 350px;
+    float: right;
+    background: rgba(178, 188, 193, 0.25);
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.infos h3{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: normal;
+    font-family: Bree serif;
+    color: #48585f;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.infos table{
+    font-size: 0.9em;
+}
+.infos table td{
+    width:50%;
+}
+/* 1ere cellule de chaque lign doit etre en gras*/
+.infos table tr td:first-child{
+    font-weight: bold;
+}
+
+
+#actualites{
+    background:rgba(178,188,193,0.5);
+    padding: 20px 0;
+    clear: both;/* Cette propriété règlera des bugs comme des boites qui reviennent mal à la ligne */
+}
+#actualites h2 {
+    color: #48585f;
+}
+#actualites h3{
+    font-family: Bree serif;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+#actualites .content{
+    overflow: auto;
+}
+#actualites .actu{
+    width: 235px;
+    padding: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    float: left;
+    text-align: left;
+} 
+
+#actualites .actu:last-child{
+    margin-right: 0;
+}
+
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    background: rgba(178, 188, 193, 0.5);
+
+}
+footer p{
+    text-align:center;
+}
